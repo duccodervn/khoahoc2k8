@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khóa Học THPTQG 2008</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0fff4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #38a169;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+      border-radius: 50%;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .subject {
+      font-size: 2.2em;
+      font-weight: bold;
+      margin: 15px 0 10px;
+      color: #2f855a;
+    }
+    .teachers {
+      font-size: 0.85em;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .price {
+      font-weight: bold;
+      color: #e53e3e;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: white;
+      background: #38a169;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      background: #2f855a;
+      transform: scale(1.05);
+    }
+    .pricing {
+      text-align: center;
+      background: #c6f6d5;
+      padding: 30px 20px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    .pricing h2 {
+      color: #2f855a;
+    }
+    .social-links {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-links a {
+      font-size: 1.8em;
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 15px;
+      border-radius: 20px;
+      background: #1a73e8;
+      transition: 0.3s ease;
+    }
+    .social-links a:hover {
+      background: #1558b0;
+    }
+    .app-label {
+      margin-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #2f855a;
+    }
+	 .note {
+      margin: 30px;
+      padding: 20px;
+      border-left: 6px solid #e53e3e;
+      background: #fff5f5;
+      border-radius: 10px;
+    }
+    .note h3 {
+      margin-top: 0;
+      color: #e53e3e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.pinimg.com/736x/24/99/22/2499225e17cda191f106b79620144b87.jpg" alt="TikTok Official">
+    <h1>Khóa Học Luyện Thi THPTQG 2008</h1>
+    <p>Chính chủ từ tài khoản TikTok</p>
+  </header>
+
+  <section class="courses">
+    <!-- Toán -->
+    <div class="card">
+      <div class="subject">TOÁN</div>
+      <div class="teachers">
+        Chu Văn Biên, Thầy Trịnh Đình Thành, Thầy Nguyễn Quốc Chí, Thầy Nguyễn Phan Tiến, Thầy Nguyễn Đăng Ái, Thầy Đỗ Văn Đức, Anh Shipper Toán, Anh Giáo Kid, Cô Huyền LB
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/1xoVWT1jl64escW47UBImYmC1BncwX0O5?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Lý -->
+    <div class="card">
+      <div class="subject">LÝ</div>
+      <div class="teachers">
+        Vũ Tuấn Anh, Vũ Ngọc Anh, Vũ Hoàng Quân, IPCLASS
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/1nXax2C77IpWjjrkY2kCJE4iCb943vbz5?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Hóa -->
+    <div class="card">
+      <div class="subject">HÓA</div>
+      <div class="teachers">
+        Thầy Phạm Văn Trọng, Thầy Phạm Thắng, Cô Thân Thị Liên, Thầy Nguyễn Anh Phong
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/1i8ziJVOiPyJt9BlyNF4DwEtNOhG2-Hm9?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Sinh -->
+    <div class="card">
+      <div class="subject">SINH</div>
+      <div class="teachers">
+        Thầy Trương Công Kiên (QANDA), Thầy Phan Khắc Nghệ
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/16TxmVEcvqNxAsFr3JOkO5jWMeSjRWK2G?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Ngữ Văn -->
+    <div class="card">
+      <div class="subject">NGỮ VĂN</div>
+      <div class="teachers">
+        Thầy Nhật, Cô Sương Mai (QANDA)
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/1HDnuOqzyKPrrEexP7jiLGH2dERDh4tMM?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Lịch Sử -->
+    <div class="card">
+      <div class="subject">LỊCH SỬ</div>
+      <div class="teachers">
+        Cô Nguyễn Hương Sen
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/14Up42VGDrPi35KckXFIFBaVUPupA-0V_?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Địa Lý -->
+    <div class="card">
+      <div class="subject">ĐỊA LÝ</div>
+      <div class="teachers">
+        Cô Mai Anh
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/14Up42VGDrPi35KckXFIFBaVUPupA-0V_?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Tiếng Anh -->
+    <div class="card">
+      <div class="subject">TIẾNG ANH</div>
+      <div class="teachers">
+        Cô Trang Anh Moon, Cô Phạm Liễu
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/11y08b2-UuVcVfZWu0uIDkTcdoC3wfn7b?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Khoa học Xã hội Combo -->
+    <div class="card">
+      <div class="subject">KHOA HỌC XÃ HỘI</div>
+      <div class="teachers">
+        Lịch sử + Địa lý (tổng hợp)
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/14Up42VGDrPi35KckXFIFBaVUPupA-0V_?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+
+    <!-- Combo ĐGNL -->
+    <div class="card">
+      <div class="subject">COMBO ĐGNL & TƯ DUY</div>
+      <div class="teachers">
+        Tổng hợp nhiều giảng viên chuyên đề
+      </div>
+      <div class="price">15.000đ</div>
+      <div class="buttons">
+        <a href="#contact" class="btn">Mua</a>
+        <a href="https://drive.google.com/drive/folders/17bIi4wTsQBaxXYEAMqUZQVxbJoZgp1pN?usp=drive_link" target="_blank" class="btn">Truy cập</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pricing">
+    <h2>Bảng Giá Ưu Đãi</h2>
+    <ul style="list-style: none; padding: 0; font-size: 1.1em;">
+      <li>📘 Mỗi môn: <b>15.000đ</b></li>
+      <li>📗 Combo 3 môn: <b>40.000đ</b></li>
+      <li>📙 Full tất cả: <b>50.000đ</b></li>
+    </ul>
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61573521132928" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="https://www.tiktok.com/@thptqg20262k8" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+    <div class="app-label">CHI TIẾT LIÊN HỆ</div>
+  </section>
+  <div class="note">
+    <h3>📌 Lưu ý</h3>
+    <p><b>Chỉ có bài giảng</b> – không kèm tài liệu in sẵn.</p>
+  </div>
+</body>
+</html>
